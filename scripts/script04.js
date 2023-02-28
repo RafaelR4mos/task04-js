@@ -18,9 +18,12 @@ const sacasCastelo = [
     },
 ];
 
-function levelSacas(levelArray) {
+function levelSacas(item) {
+    const castleTotalSacas = item.gold + item.prata + item.madeira + item.pedra;
+
     console.log(
-        `Objetos do meu inventário - ${levelArray.name}: \n Ouro: ${levelArray.gold} \n Prata: ${levelArray.prata} \n Madeira: ${levelArray.madeira} \n Pedra: ${levelArray.pedra} \n`
+        `Objetos do meu inventário - ${item.name}: \n Ouro: ${item.gold} \n Prata: ${item.prata} \n Madeira: ${item.madeira} \n Pedra: ${item.pedra} \n Na "${item.name}" o status do meu inventário é: \n Total de 4 tipo de itens com: ${castleTotalSacas} sacas.
+        `
     );
 }
 
