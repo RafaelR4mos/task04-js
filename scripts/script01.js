@@ -6,13 +6,4 @@ for (var i = 0; i < 10; i++) {
 console.log("Lista de 10 posições: " + vetor);
 var vetor2 = vetor.sort();
 
-// for (var i = 0; i < vetor.length; i++) {
-//     for (var c = i + 1; c < vetor.length; c++) {
-//         if (vetor[i] > vetor[c]) {
-//             var aux = vetor[i];
-//             vetor[i] = vetor[c];
-//             vetor[c] = aux;
-//         }
-//     }
-// }
 console.log("Lista de ordem crescente: " + vetor2);
